@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id = "@+id/subj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/subject_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Subject"
+                android:textSize="35sp" />
+
+            <EditText
+                android:id="@+id/subject_field"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/subject_text" />
+
+            <TextView
+                android:id="@+id/start_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject_text"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Start time"
+                android:textSize="35sp" />
+
+            <EditText
+                android:id="@+id/start_field"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/subject_field"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/start_text" />
+
+            <TextView
+                android:id="@+id/end_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_text"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="End time"
+                android:textSize="35sp" />
+
+            <EditText
+                android:id="@+id/end_field"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/start_field"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/end_text" />
+
+            <TextView
+                android:id="@+id/days_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end_field"
+                android:layout_marginLeft="16dp"
+
+                android:layout_marginTop="24dp"
+                android:text="Choose the day"
+                android:textSize="35sp" />
+
+            <Spinner
+                android:id = "@+id/dropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/end_field"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/days_text"
+                android:entries="@array/days_array"
+                android:gravity="center_horizontal"
+                android:text="Day"
+                android:textAlignment="center"
+                android:textSize="45sp" />
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Add"
+            android:textSize = "20sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:onClick="fetchData"/>
+            />
+    </LinearLayout>
+
+
+</ScrollView>

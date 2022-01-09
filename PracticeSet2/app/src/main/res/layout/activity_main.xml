@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.practiceset2.MainActivity">
+    <Button
+        android:id="@+id/udacitycola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UdacityCola"
+        android:textSize="45sp"
+        android:onClick="udacitycola"
+        android:layout_marginLeft="16dp"
+
+
+
+        />
+    <Button
+        android:id="@+id/pepsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pepsi"
+        android:textSize="45sp"
+        android:onClick="pepsi"
+        android:layout_marginLeft="16dp"
+
+
+        />
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:textSize="45sp"
+        android:onClick="result"
+        android:layout_marginLeft="16dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/display_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/display_text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/display_text_view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="45sp" />
+
+</LinearLayout>

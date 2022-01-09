@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClassAid"
+        android:textColor="#1E27D3"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="TimeTable"
+            android:textSize="30sp"
+            android:onClick="showTimeTable"
+            android:src="@+id/timetable"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Events"
+            android:src="@+id/events"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:src="@+id/addtimetable"
+        android:text="Add a new timetable!"
+        android:textSize="26dp"
+        android:onClick="addsubject"/>
+
+</LinearLayout>
