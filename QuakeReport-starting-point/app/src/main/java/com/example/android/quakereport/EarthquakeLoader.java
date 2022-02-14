@@ -1,6 +1,7 @@
 package com.example.android.quakereport;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.loader.content.AsyncTaskLoader;
 
@@ -22,6 +23,7 @@ public class EarthquakeLoader extends AsyncTaskLoader<ArrayList<Earthquake>> {
 
     @Override
     public ArrayList<Earthquake> loadInBackground() {
+        Log.e("loader", "Getting the data");
         try {
             return QueryUtils.makeRequest();
         } catch (MalformedURLException e) {
